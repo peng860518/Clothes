@@ -17,6 +17,11 @@ public class Clothes{
 		setcolor(color);
 	}
 	
+	public Clothes(String size,String color,int price){
+		this(size,price);
+		setprice(price);
+	}
+	
 	public String getSize(){
 		return this.size;
 	}
@@ -31,6 +36,14 @@ public class Clothes{
 	
 	public void setColor(String color){
 		this.color = color;
+	}
+	
+	public int getPrice(){
+		return this.price;
+	}  
+	
+	public void setPrice(int price){
+		this.price = price;
 	}
 
 }
